@@ -12,4 +12,5 @@ namespace Vendor\Student;
 interface StudentInterface
 {
 
+    public function getRes($idsStud);
 }

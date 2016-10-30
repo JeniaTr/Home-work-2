@@ -6,11 +6,11 @@
  * Time: 15:53
  */
 
-namespace Vendor\Student;
+namespace vendor\Student;
 
 
 interface StudentInterface
 {
+    public function getIdSt ();
 
-    public function getRes($idsStud);
 }

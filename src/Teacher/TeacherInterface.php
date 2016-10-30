@@ -11,5 +11,12 @@ namespace Vendor\Teacher;
 
 Interface TeacherInterface
 {
+    public function getCurs($idSt);
+
+    public function getGrup($idSt);
+
+    public function getAnalisRes($idSt);
+
+    public function write(array $data);
 
 }

@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
+
 $student = new \Vendor\Student\ReturnsIdStudent('Петро Іванович Шматько');
 $school = new \Vendor\Teacher\School($student);
 

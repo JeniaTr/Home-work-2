@@ -9,7 +9,7 @@
 namespace Vendor\Teacher;
 
 
-class AbstrWriteFile
+abstract class AbstrWriteFile
 {
     private $fileName;
 

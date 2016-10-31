@@ -9,7 +9,7 @@
 namespace Vendor\Teacher;
 
 
-class InfoAboutSt implements TeacherInterface
+class InfoAboutSt extends AbstrWriteFile implements TeacherInterface
 {
 
     public function getCurs($idSt)
@@ -29,7 +29,12 @@ class InfoAboutSt implements TeacherInterface
         return;
     }
 
+    /**
+     * @param array $data
+     */
     public function write(array $data)
     {
+        $encodedData = json_encode($data);
+        $this->writeToFile($encodedData);
     }
 }

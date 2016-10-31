@@ -4,7 +4,7 @@ namespace Vendor\School;
 namespace Vendor\Teacher;
 
 use Vendor\Student\StudentInterface;
-
+#use Vendor\Teacher\TeacherInterface;
 class School
 {
     private $student;
@@ -18,17 +18,14 @@ class School
         $this->student=$student;
     }
 
-    /**
-     * @param \Vendor\Teacher\TeacherInterface $writer
-     */
-    public function createInfoAnalysis (TeacherInterface $writer)
+    public function createInfoAnalysis( TeacherInterface $teacher)
     {
-        $idst= $this->student->getIdSt();
-        $curs=$writer->getCurs($idst);
-        $grup=$writer->getGrup($idst);
-        $analisRes=$writer->getAnalisRes($idst);
+        $idst = $this->student->getIdSt();
+        $curs = $teacher->getCurs($idst);
+        $grup = $teacher->getGrup($idst);
+        $analisRes = $teacher->getAnalisRes($idst);
         $compounDate = $this->compounDate($curs, $grup, $analisRes);
-        $writer->write($compounDate);
+        $teacher->write($compounDate);
     }
 
     /**

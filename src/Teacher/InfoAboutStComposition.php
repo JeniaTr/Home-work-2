@@ -20,12 +20,12 @@ class InfoAboutStComposition implements TeacherInterface
 
     public function getCurs($idSt)
     {
-        $this->getCurs($idSt);
+        $this->compWriter->getCurs($idSt);
     }
 
     public function getGrup($idSt)
     {
-        $this->getGrup($idSt);
+        $this->compWriter->getGrup($idSt);
     }
 
     public function getAnalisRes($idSt)

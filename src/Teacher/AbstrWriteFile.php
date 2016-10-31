@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jenia
- * Date: 31.10.16
- * Time: 2:20
- */
 
 namespace Vendor\Teacher;
-
 
 abstract class AbstrWriteFile
 {

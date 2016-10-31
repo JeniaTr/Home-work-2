@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: jenia
  * Date: 31.10.16
- * Time: 2:01
+ * Time: 2:01.
  */
 
 namespace Vendor\Teacher;
@@ -14,7 +14,7 @@ class InfoAboutStComposition implements TeacherInterface
 
     public function __construct($dest)
     {
-        $fileName = $dest . '/WriteCopositionMetod.json';
+        $fileName = $dest.'/WriteCopositionMetod.json';
         $this->compWriter = new InfoAboutSt($fileName);
     }
 

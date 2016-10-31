@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: jenia
  * Date: 30.10.16
- * Time: 23:47
+ * Time: 23:47.
  */
 
 namespace vendor\Student;
-
 
 class ReturnsIdStudent implements StudentInterface
 {
@@ -15,12 +14,12 @@ class ReturnsIdStudent implements StudentInterface
 
     public function __construct($fio)
     {
-        $this->fio=$fio;
+        $this->fio = $fio;
     }
 
-    public function getIdSt ()
+    public function getIdSt()
     {
-        #Get id by FIO
-        Return;
+        //Get id by FIO
+        return;
     }
 }

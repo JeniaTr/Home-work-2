@@ -3,24 +3,22 @@
  * Created by PhpStorm.
  * User: jenia
  * Date: 30.10.16
- * Time: 23:44
+ * Time: 23:44.
  */
 
 namespace Vendor\Teacher;
 
-
 class InfoAboutSt extends AbstrWriteFile implements TeacherInterface
 {
-
     public function getCurs($idSt)
     {
-        #опеределить курс по
+        //опеределить курс по
         return;
     }
 
     public function getGrup($idSt)
     {
-        #опеределить групу по
+        //опеределить групу по
         return;
     }
 
